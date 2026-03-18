@@ -153,12 +153,3 @@ Login menggunakan akun dummy:
 Repository backend (Laravel): [umkm-platform-api](https://github.com/Rydhoff/umkm-platform-api)
 
 Base URL API: `http://umkm-platform.my.id/api`
-
----
-
-## 👥 Kontributor
-
-| Nama | Role |
-|---|---|
-| Fhazar Raffiful Aqyla| Frontend Developer |
-| Ridho Darmawan | Backend Developer |
