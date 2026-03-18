@@ -1,0 +1,60 @@
+.page { display:flex; flex-direction:column; min-height:100vh; }
+
+.header {
+  position:sticky; top:0; z-index:50;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:var(--space-md);
+  background-color:var(--color-bg-card);
+  border-bottom:1px solid var(--color-border);
+}
+
+.backBtn {
+  width:40px; height:40px; border-radius:50%;
+  background-color:var(--color-bg); border:1.5px solid var(--color-border);
+  display:flex; align-items:center; justify-content:center;
+  cursor:pointer; color:var(--color-text-primary); transition:all var(--transition-fast);
+}
+.backBtn:hover { border-color:var(--color-primary); color:var(--color-primary); }
+.title { font-size:1.125rem; font-weight:800; }
+
+.content { flex:1; padding:var(--space-md); display:flex; flex-direction:column; gap:var(--space-md); }
+
+.itemList { display:flex; flex-direction:column; gap:var(--space-sm); }
+
+.summary {
+  background-color:var(--color-bg-card); border-radius:var(--radius-lg);
+  padding:var(--space-md); border:1.5px solid var(--color-border-light);
+  display:flex; flex-direction:column; gap:var(--space-sm);
+}
+.summaryTitle { font-size:0.9375rem; font-weight:800; margin-bottom:4px; }
+.summaryRow { display:flex; align-items:center; justify-content:space-between; font-size:0.875rem; color:var(--color-text-secondary); }
+.noteText { font-size:0.75rem; color:var(--color-text-muted); font-style:italic; }
+.divider { height:1px; background-color:var(--color-border); }
+.totalRow { font-weight:700; color:var(--color-text-primary); font-size:0.9375rem; }
+.totalAmount { font-weight:800; color:var(--color-primary); }
+
+.checkoutBar {
+  position:sticky; bottom:var(--bottom-nav-height);
+  background-color:var(--color-bg-card);
+  border-top:1px solid var(--color-border);
+  padding:var(--space-md);
+  display:flex; align-items:center; justify-content:space-between;
+  gap:var(--space-md); z-index:40;
+}
+@media (min-width: 1200px) {
+  .page { padding-bottom: var(--space-xl); }
+  .checkoutBar { bottom:0; }
+  .content { padding:var(--space-xl); }
+}
+
+.checkoutTotal { display:flex; flex-direction:column; }
+.checkoutLabel { font-size:0.75rem; color:var(--color-text-muted); }
+.checkoutAmount { font-weight:800; font-size:1.125rem; color:var(--color-primary); }
+.checkoutBtn { flex-shrink:0; }
+
+@media (min-width: 1200px) {
+  .page { padding-bottom: calc(var(--bottom-nav-height) + var(--space-lg)); }
+  .content { padding: var(--space-xl); padding-bottom: 120px; }
+  .header { padding: var(--space-md) var(--space-xl); }
+  .checkoutBar { bottom: 0; left: 0; right: 0; transform: none; max-width: none; width: 100%; }
+}

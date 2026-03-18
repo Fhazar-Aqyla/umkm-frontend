@@ -1,0 +1,214 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  background-color: var(--color-bg);
+  padding-bottom: calc(var(--bottom-nav-height) + var(--space-lg));
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-md);
+  background-color: var(--color-bg-card);
+  border-bottom: 1px solid var(--color-border);
+  gap: var(--space-sm);
+}
+
+.backBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-bg);
+  border: 1.5px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  color: var(--color-text-primary);
+  flex-shrink: 0;
+}
+
+.backBtn:hover { border-color: var(--color-primary); color: var(--color-primary); }
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 800;
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.tracker {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  border: 1.5px solid var(--color-border-light);
+}
+
+.steps {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: var(--space-md);
+  position: relative;
+}
+
+.stepItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  position: relative;
+}
+
+.stepCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-border-light);
+  border: 2px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  transition: all var(--transition-normal);
+  z-index: 1;
+}
+
+.stepCircle.done {
+  background-color: #D1FAE5;
+  border-color: var(--color-success);
+}
+
+.stepCircle.active {
+  background-color: var(--color-primary-bg);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.15);
+}
+
+.stepLine {
+  position: absolute;
+  top: 20px;
+  left: calc(50% + 20px);
+  width: calc(100% - 40px);
+  height: 2px;
+  background-color: var(--color-border);
+  z-index: 0;
+  transition: background-color var(--transition-normal);
+}
+
+.lineActive { background-color: var(--color-success); }
+
+.stepLabel {
+  font-size: 0.6875rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  text-align: center;
+}
+
+.stepLabelActive {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.cancelledBanner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  background-color: #FEE2E2;
+  border: 1px solid #FECACA;
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  font-size: 0.875rem;
+  color: #991B1B;
+  font-weight: 600;
+}
+
+.card {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  border: 1.5px solid var(--color-border-light);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.sectionTitle {
+  font-size: 0.9375rem;
+  font-weight: 800;
+  color: var(--color-text-primary);
+}
+
+.storeName {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.storeAddress {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.orderTypeBadge {
+  display: inline-flex;
+  padding: 4px 12px;
+  background-color: var(--color-primary-bg);
+  color: var(--color-primary);
+  border-radius: var(--radius-full);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.itemList { display: flex; flex-direction: column; gap: 6px; }
+
+.itemRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.itemName { flex: 1; }
+.itemPrice { font-weight: 600; }
+
+.priceList { display: flex; flex-direction: column; gap: 8px; }
+
+.priceRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.divider { height: 1px; background-color: var(--color-border); }
+
+.totalRow {
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: var(--color-text-primary);
+}
+
+.totalAmount {
+  font-family: var(--font-display);
+  color: var(--color-primary);
+}
+
+@media (min-width: 1200px) {
+  .page { padding-bottom: var(--space-xl); }
+}
