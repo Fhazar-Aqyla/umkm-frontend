@@ -7,7 +7,7 @@ Platform pencarian & pemesanan UMKM terdekat berbasis lokasi. Dibangun dengan Re
 ## ✨ Fitur Utama
 
 ### Untuk Pembeli
-- 📍 Temukan warung terdekat berdasarkan lokasi GPS (radius 5 km)
+- 📍 Temukan warung terdekat berdasarkan lokasi GPS (radius 5 km) 
 - 🔍 Cari & filter warung (Buka, Makanan, Minuman, Sembako, Terdekat)
 - 🛒 Tambah produk ke keranjang & checkout
 - 📋 Riwayat pesanan + tracking status (Menunggu → Diterima → Disiapkan → Selesai)
