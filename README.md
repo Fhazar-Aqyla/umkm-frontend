@@ -17,7 +17,7 @@ Platform pencarian & pemesanan UMKM terdekat berbasis lokasi. Dibangun dengan Re
 - 📊 Dashboard pesanan masuk real-time
 - 📦 Kelola produk (tambah, edit, hapus, upload foto)
 - 🏪 Buat & edit info warung
-- 💰 Laporan keuangan otomatis (pemasukan, pengeluaran, keuntungan bersih)
+- 💰 Laporan keuangan otomatis (pemasukan, pengeluaran, keuntungan bersih)n
 - 📥 Export laporan ke Excel — 4 sheet lengkap & berformat rapih
 
 ---
