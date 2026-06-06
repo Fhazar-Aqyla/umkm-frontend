@@ -1,4 +1,4 @@
-# 🏪 Lapakly cuy
+# 🏪 Lapakly cuy lah
 
 Platform pencarian & pemesanan UMKM terdekat berbasis lokasi. Dibangun dengan React + Vite, terhubung ke backend Laravel yang sudah live.
 
